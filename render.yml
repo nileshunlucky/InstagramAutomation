@@ -9,18 +9,7 @@ services:
     plan: free
     autoDeploy: true
     envVars:
-      - key: CLOUDINARY_CLOUD_NAME
-        sync: false
-      - key: CLOUDINARY_API_KEY
-        sync: false
-      - key: CLOUDINARY_API_SECRET
-        sync: false
       - key: IG_USER_ID
         sync: false
       - key: IG_ACCESS_TOKEN
-        sync: false
-      # YouTube credentials - these will need to be set up in the Render dashboard
-      - key: YOUTUBE_CLIENT_SECRETS_FILE
-        sync: false
-      - key: YOUTUBE_TOKEN_FILE
         sync: false
