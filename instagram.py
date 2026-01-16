@@ -34,8 +34,7 @@ def fetch_random_video_from_cloudinary():
                 "https://res.cloudinary.com/dccsatiwa/video/upload/v1768581887/VID_20260116_080611_069_bsl_qgkwqn.mp4",
         ]
 
-        video = random.choice(videos)
-        video_url = video.get("secure_url")
+        video_url = random.choice(videos)
         
         if not video_url or not video_url.startswith("https://"):
             logger.error(f"Invalid video URL: {video_url}")
